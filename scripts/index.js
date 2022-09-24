@@ -12,8 +12,8 @@ function popupOpen() {
 }
 
 let formElement = document.querySelector('.popup__content');
-let nameInput = popup.querySelector('.popup__form_name');
-let jobInput = popup.querySelector('.popup__form_profession');
+let nameInput = popup.querySelector('.popup__form-text_name');
+let jobInput = popup.querySelector('.popup__form-text_profession');
 let person = document.querySelector('.profile__title');
 let about = document.querySelector('.profile__subtitle');
 
