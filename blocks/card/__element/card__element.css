@@ -1,0 +1,6 @@
+.card__element {
+  min-width: 282px;
+  min-height: 282px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}

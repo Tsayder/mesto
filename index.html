@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Место</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+
+<body class="content">
+  <div class="page">
+    <header class="header">
+      <img src="./images/Vector.svg" alt="логотип Место.Россия" class="header__logo">
+      <div class="header__line"></div>
+    </header>
+    <main class="content">
+      <section class="profile">
+        <img src="./images/Custo.png" alt="портрет Кусто" class="profile__portrait">
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button class="profile__edit-button profile__open-popup">
+            <img class="profile__rectangle" src="./images/Rectangle.svg" alt="квадрат">
+          </button>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__add-button"></button>
+      </section>
+      <section class="elements" aria-label="статья">
+        <article class="card">
+          <img class="card__element" src="./images/kirill-pershin-k.png" alt="Сентинский храм">
+          <div class="card__conteiner">
+            <h2 class="card__title">Карачаевск</h2>
+            <button class="card__group"></button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__element" src="./images/kirill-pershin-e.png" alt="Гора Эльбрус">
+          <div class="card__conteiner">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button class="card__group"></button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__element" src="./images/kirill-pershin-d.png" alt="Гора">
+          <div class="card__conteiner">
+            <h2 class="card__title">Домбай</h2>
+            <button class="card__group"></button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__element" src="./images/kirill-pershin-e.png" alt="Гора Эльбрус">
+          <div class="card__conteiner">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button class="card__group"></button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__element" src="./images/kirill-pershin-d.png" alt="Гора">
+          <div class="card__conteiner">
+            <h2 class="card__title">Домбай</h2>
+            <button class="card__group"></button>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__element" src="./images/kirill-pershin-k.png" alt="Сентинский храм">
+          <div class="card__conteiner">
+            <h2 class="card__title">Карачаево-Черкессия</h2>
+            <button class="card__group"></button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__author">&copy; 2020 Mesto Russia</p>
+    </footer>
+    <section class="popup">
+      <div class="popup__conteiner">
+        <button class="popup__close"><img src="./images/Close-Icon.svg" alt="" class="popup__close-img"></button>
+        <form class="popup__content">
+          <h2 class="popup__form-heading">Редактировать профиль</h2>
+          <fieldset class="popup__form">
+            <input type="text" class="popup__form-text popup__form_name" placeholder="Имя" value="Жак-Ив кусто">
+            <input type="text" class="popup__form-text popup__form_profession" placeholder="О себе"
+              value="Исследователь океана">
+            <button class="popup__button">Сохранить</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
