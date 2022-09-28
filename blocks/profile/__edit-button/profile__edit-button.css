@@ -3,6 +3,7 @@
   background: none;
   border: none;
   box-shadow: none;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {

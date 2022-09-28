@@ -1,7 +1,6 @@
 .popup__conteiner {
   width: 100%;
   max-width: 430px;
-  min-height: 330px;
   background: white;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15);
@@ -9,8 +8,8 @@
   position: relative;
   padding: 34px 36px 37px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 610px) {
