@@ -1,4 +1,4 @@
-const popupOpenButton = document.querySelector('.profile__open-popup');
+const popupOpenButton = document.querySelector('.profile__edit-button');
 const popup = document.querySelector('.popup');
 const popupCloseButton = popup.querySelector('.popup__close');
 let formElement = document.querySelector('.popup__content');
@@ -12,7 +12,7 @@ const popupToggle = function () {
 }
 
 const closePopup = function () {
-  popup.classList.toggle('popup_opened');
+  popup.classList.remove('popup_opened');
 }
 
 function formFields() {
@@ -26,8 +26,14 @@ function formSubmitHandler(evt) {
   about.textContent = jobInput.value;
   closePopup();
 }
-popupOpenButton.addEventListener('click', popupToggle);
-popupOpenButton.addEventListener('click', formFields);
+popupOpenButton.addEventListener('click', popupToggle, formFields());
 popupCloseButton.addEventListener('click', popupToggle);
 formElement.addEventListener('submit', formSubmitHandler);
+
+//упер!
+//Есть небольшие замечания по коду, которые бросают в глаз.
+//Почисти его немного:
+//Названия классов слишком большие и не по БЭМ.Стр. 6 - 7
+//у тебя есть неиспользуемый метод на стр. 16
+//У тебя 2 листенера на один и тот же ивент повешены, так не делается.Объедени это в один метод.Стр. 31 - 32
 
