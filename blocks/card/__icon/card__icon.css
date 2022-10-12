@@ -1,0 +1,13 @@
+.card__icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.card__icon:hover {
+  opacity: .6;
+}

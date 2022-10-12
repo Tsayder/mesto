@@ -1,4 +1,4 @@
-.popup__close {
+.popup-card__close {
   position: absolute;
   max-width: 32px;
   padding: 0;
@@ -10,12 +10,12 @@
   box-shadow: none;
 }
 
-.popup__close:hover {
+.popup-card__close:hover {
   opacity: .6;
 }
 
 @media screen and (max-width: 610px) {
-  .popup__close {
+  .popup-card__close {
     max-width: 20px;
     max-height: 20px;
     top: -34px;
