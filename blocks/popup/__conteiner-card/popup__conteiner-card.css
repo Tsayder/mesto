@@ -1,4 +1,7 @@
-.popup__conteiner_theme_card {
+.popup__conteiner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 75vw;
   max-height: 75vh;
   border-radius: 10px;

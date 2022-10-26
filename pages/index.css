@@ -44,7 +44,7 @@
 
 
 @import url(../blocks/popup/_theme/popup_theme_card.css);
-@import url(../blocks/popup/__conteiner/_theme/popup__conteiner_theme_card.css);
+@import url(../blocks/popup/__conteiner-card/popup__conteiner-card.css);
 @import url(../blocks/popup/__img/popup__img.css);
 @import url(../blocks/popup/__title/popup__title.css);
 
