@@ -1,9 +1,9 @@
 .popup__conteiner {
   width: 100%;
   max-width: 430px;
+  height: 330px;
   background: white;
   border-radius: 10px;
-  /* box-shadow: rgba(0, 0, 0, 0.15);*/
   box-sizing: border-box;
   position: relative;
   padding: 34px 36px 37px;
@@ -16,5 +16,6 @@
   .popup__conteiner {
     max-width: 282px;
     padding: 25px 22px;
+    height: 322px;
   }
 }

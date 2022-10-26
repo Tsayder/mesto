@@ -4,22 +4,8 @@
   height: 27px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
-  margin: 30px 0 0;
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   padding: 0;
-}
-
-.popup__form-text:first-child {
-  margin-top: 54px;
-}
-
-.popup__form-text:invalid {
-  border-bottom: 1px solid red;
-}
-
-@media screen and (max-width: 610px) {
-  .popup__form-text:first-child {
-    margin-top: 75px;
-  }
 }
