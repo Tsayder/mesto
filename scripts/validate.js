@@ -63,16 +63,6 @@ const enableValidation = (config) => {
   });
 };
 
-//////////////////
-function resetError(formElement, config) {
-  const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
-  // очищаем ошибки валидации
-  inputList.forEach(inputElement => hideInputError(formElement, inputElement, config));
-  // актуализируем состояние кнопки сабмита
-  toggleButtonState(formElement, inputList, config);
-}
-
-
 ////////////////////
 const config = {
   formSelector: '.popup__content',
