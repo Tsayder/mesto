@@ -26,9 +26,10 @@ function closePopup(popup) {
 
 
 class Card {
-  constructor(name, link) {
+  constructor(name, link, template) {
     this._name = name;
     this._link = link;
+    this._template = template;
   }
 
   _getTemplate() {
