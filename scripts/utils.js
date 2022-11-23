@@ -5,7 +5,6 @@ const handleKey = (evt) => {
     const popupCloseTotal = document.querySelector('.popup_opened');
     closePopup(popupCloseTotal);
     console.log('handlekey');
-
   };
 }
 

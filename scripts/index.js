@@ -40,21 +40,12 @@ const config = {
   buttonElementSelector: '.popup__button'
 };
 
-let configList = new Array();
-
-const formList = Array.from(document.querySelectorAll(config.formSelector));
-formList.forEach((formElement) => {
-  const form = new FormValidator(config, formElement);
-  form.enableValidation();
-  configList.push(form);
-});
-
+//////////////////////////////////////////////////
 const elements = document.querySelector('.elements');
 
 initialCards.forEach((item) => {
-  const cardy = new Card(item.name, item.link);
-  const cardElement = cardy.generateCard();
-  elements.append(cardElement);
+  const card = createCard(item.name, item.link);
+  elements.append(card);
 });
 
 const popupProfileOpenButton = document.querySelector('.profile__edit-button');
@@ -73,27 +64,30 @@ const popupActual = document.querySelector('.popup_theme_card');
 const popupActualClose = document.querySelector('.popup__close_theme_card');
 const nameInputCards = popupPlace.querySelector('.popup__form-text_named_input');
 const linkInputCards = popupPlace.querySelector('.popup__form-text_link_input');
+
+const validatorAddCard = new FormValidator(config, formElementPlace);
+const validatorEditProfile = new FormValidator(config, formProfileElement);
 //////////////////////////////////////
 function createCard(name, link) {
   const cardу = new Card(name, link);
-  const cart = cardу.generateCard();
-  return cart;
+  const card = cardу.generateCard();
+  return card;
 }
 
 function submitAddCardForm(evt) {
   evt.preventDefault();
-  const cartita = createCard(nameInputCards.value, linkInputCards.value);
-  elements.prepend(cartita);
+  const card = createCard(nameInputCards.value, linkInputCards.value);
+  elements.prepend(card);
   nameInputCards.value = '';
   linkInputCards.value = '';
   closePopup(popupPlace);
-  configList[1].disableButton();
+  validatorAddCard.disableButton();
 }
 
 popupProfileOpenButton.addEventListener('click', () => {
   openPopup(popupProfile);
   addFields();
-  configList[0].enableButton();
+  validatorEditProfile.enableValidation();
 });
 
 popupProfileCloseButton.addEventListener('click', () => {
@@ -104,6 +98,7 @@ formProfileElement.addEventListener('submit', submitProfileForm);
 
 popupOpenButtonPlace.addEventListener("click", () => {
   openPopup(popupPlace);
+  validatorAddCard.enableValidation();
 });
 
 popupPlaceCloseButton.addEventListener('click', () => {
